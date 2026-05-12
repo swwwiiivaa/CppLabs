@@ -29,11 +29,11 @@ int main(){
     // cout << "Среднее значение: " << (double)sum / grades.size();
     
 
-
-// в2
+// 2 задание
+// в1
     double x = 0.3;
     double eps = 0.0001;
-    double y = cos(x); // Контрольное значение
+    double y = cos(x);
     
     double S = 0;
     double term = 1.0; // Первый член ряда (n=0)
@@ -46,9 +46,9 @@ int main(){
         term *= -x * x / ((2 * n - 1) * (2 * n));
     }
 
-    cout << "Sum (while): " << fixed << setprecision(6) << S << endl;
-    cout << "Control (y): " << y << endl;
-    cout << "Difference:  " << abs(S - y) << endl;
+    cout << "сумма (while): " << fixed << setprecision(6) << S << endl;
+    cout << "y: " << y << endl;
+    cout << "разница:  " << abs(S - y) << endl;
 
 
 // в2
@@ -66,8 +66,8 @@ int main(){
         term *= -x * x / ((2 * n - 1) * (2 * n));
     } while (abs(term) >= eps);
 
-    cout << "Sum (do-while): " << fixed << setprecision(6) << S << endl;
-    cout << "Control (y):    " << y << endl;
+    cout << "сумма (do-while): " << fixed << setprecision(6) << S << endl;
+    cout << "y:    " << y << endl;
 
     
 // третье фииизика
