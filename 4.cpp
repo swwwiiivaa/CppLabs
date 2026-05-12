@@ -50,7 +50,7 @@ int main(){
     cout << "Control (y): " << y << endl;
     cout << "Difference:  " << abs(S - y) << endl;
 
-    
+
 // в2
     double x = 0.3;
     double eps = 0.0001;
@@ -69,7 +69,25 @@ int main(){
     cout << "Sum (do-while): " << fixed << setprecision(6) << S << endl;
     cout << "Control (y):    " << y << endl;
 
+    
+// третье фииизика
+    double V = 6.0;      // м3
+    double m = 25.0;     // кг
+    double M = 0.018;    // кг/моль (перевели в СИ)
+    double R = 8.314;    // Дж/(моль*К)
 
+    cout << setw(10) << "t, C" << setw(15) << "P, кПа" << endl;
+    cout << "--------------------------" << endl;
+
+    for (int t = 200; t <= 300; t += 20) {
+        double T = t + 273.15; // Перевод в Кельвины
+        
+        // Расчет давления в Паскалях
+        double P = (m * R * T) / (M * V);
+        
+        // Вывод в килопаскалях (кПа) для удобства
+        cout << setw(10) << t << setw(15) << fixed << setprecision(2) << P / 1000 << endl;
+    }
 
 
     return 0;
