@@ -1,4 +1,4 @@
-// // 1.1 задание
+// // // 1.1 задание
 // #include <iostream>
 // #include <time.h>
 // #include <stdlib.h>
@@ -117,32 +117,33 @@
 
 
 
-// 2 задание
-#include <iostream>
-using namespace std;
+// // 2 задание
+// #include <iostream>
+// using namespace std;
 
-int main(){
-    double count_zero = 0, count_positive = 0, count_negative = 0;
-    double sum_positive = 0, sum_negative = 0;
-    double lelele[10] = {1, 2, 3, -1, -2, -3, 0, 0, 0, 0};
-    for (int i = 0; i < 10; i++){
-        if (lelele[i] == 0){
-            count_zero++;
-        }
-        else if(lelele[i] > 0){
-            count_positive++;
-            sum_positive += lelele[i];
-        }
-        else {
-            count_negative++;
-            sum_negative += lelele[i];
-        }
-    }
+// int main(){
+//     double count_zero = 0, count_positive = 0, count_negative = 0;
+//     double sum_positive = 0, sum_negative = 0;
+//     double lelele[10] = {1, 2, 3, -1, -2, -3, 0, 0, 0, 0};
+//     for (int i = 0; i < 10; i++){
+//         if (lelele[i] == 0){
+//             count_zero++;
+//         }
+//         else if(lelele[i] > 0){
+//             count_positive++;
+//             sum_positive += lelele[i];
+//         }
+//         else {
+//             count_negative++;
+//             sum_negative += lelele[i];
+//         }
+//     }
 
-    double mid_positive = sum_positive / count_positive;
-    double mid_negative = sum_negative / count_negative;
+//     double mid_positive = sum_positive / count_positive;
+//     double mid_negative = sum_negative / count_negative;
 
-    cout << "кол-во нулей " << count_zero << endl;
-    cout << "ср. положительных: " << mid_positive << endl;
-    cout << "ср. отрицательных: " << mid_negative << endl;
-}
+//     cout << "кол-во нулей " << count_zero << endl;
+//     cout << "ср. положительных: " << mid_positive << endl;
+//     cout << "ср. отрицательных: " << mid_negative << endl;
+//     return 0;
+// }

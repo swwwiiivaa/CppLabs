@@ -7,8 +7,8 @@ int LengthCounter(int n){
         return 1;
     }
     else{
-        div_t result = div(n, 10);
-        return LengthCounter(result.quot) + 1;
+        int result = n / 10;
+        return LengthCounter(result) + 1;
     }
 }
 

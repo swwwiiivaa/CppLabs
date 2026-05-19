@@ -21,7 +21,6 @@ double g(double x, double y)
 
 
 int main(){
-
     // вызовы для первого задания
     int x, y, z;
     cout << "\n поочередно введите х и у \n";
