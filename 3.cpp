@@ -32,29 +32,29 @@ int main(){
 
 
     // 2 задание
-    int age;
-    cout << "Введите скока вам лет ";
-    cin >> age;
-    string res;
-    int last = age % 100;
-    int last1 = age % 10;
+//     int age;
+//     cout << "Введите скока вам лет ";
+//     cin >> age;
+//     string res;
+//     int last = age % 100;
+//     int last1 = age % 10;
 
 
-    if (last < 11 || last > 14){
-        if (2 <= last1 && last1 <= 4){
-            res = "года";
-        }
+//     if (last < 11 || last > 14){
+//         if (2 <= last1 && last1 <= 4){
+//             res = "года";
+//         }
 
-        else if ((last1) == 1){
-            res = "год";
-        }
-        else{
-            res = "лет";
-        }
-    }
-    else{res = "лет";}
+//         else if ((last1) == 1){
+//             res = "год";
+//         }
+//         else{
+//             res = "лет";
+//         }
+//     }
+//     else{res = "лет";}
 
-    cout << "Мне " << age << " " << res;
+//     cout << "Мне " << age << " " << res;
 
-    return 0;
-}
+//     return 0;
+// }
