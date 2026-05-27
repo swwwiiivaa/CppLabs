@@ -44,6 +44,6 @@ int main() {
     double n2 = p / (k * T2);
     double delta_n = n2 - n1;
 
-    cout << "Δn = " << delta_n << " м^-3" << endl;
+    cout << "Δn = " << delta_n << " м**-3" << endl;
     return 0;
 }

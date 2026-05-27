@@ -29,48 +29,64 @@ int main(){
     // cout << "Среднее значение: " << (double)sum / grades.size();
     
 
-
-// в2
-    double x = 0.3;
-    double eps = 0.0001;
-    double y = cos(x); // Контрольное значение
+// 2 задание
+// в1 просто вайл
+    // double x = 0.3;
+    // double eps = 0.0001;
+    // double y = cos(x);
     
-    double S = 0;
-    double term = 1.0; // Первый член ряда (n=0)
-    int n = 0;
+    // double S = 0;
+    // double term = 1.0; // Первый член ряда (n=0)
+    // int n = 0;
 
-    while (abs(term) >= eps) {
-        S += term;
-        n++;
-        // Формула перехода к следующему члену
-        term *= -x * x / ((2 * n - 1) * (2 * n));
-    }
+    // while (abs(term) >= eps) {
+    //     S += term;
+    //     n++;
+    //     // Формула перехода к следующему члену
+    //     term *= -x * x / ((2 * n - 1) * (2 * n));
+    // }
 
-    cout << "Sum (while): " << fixed << setprecision(6) << S << endl;
-    cout << "Control (y): " << y << endl;
-    cout << "Difference:  " << abs(S - y) << endl;
+    // cout << "сумма: " << setprecision(6) << S << endl;
+    // cout << "y: " << y << endl;
+    // cout << "разница:  " << fixed << abs(S - y) << endl;
+
+
+// в2 с ду вайл
+    // double x = 0.3;
+    // double eps = 0.0001;
+    // double y = cos(x);
+    
+    // double S = 0;
+    // double term = 1.0;
+    // int n = 0;
+
+    // do {
+    //     S += term;
+    //     n++;
+    //     term *= -x * x / ((2 * n - 1) * (2 * n));
+    // } while (abs(term) >= eps);
+
+    // cout << "сумма: " << setprecision(6) << S << endl;
+    // cout << "y: " << fixed << y << endl;
 
     
-// в2
-    double x = 0.3;
-    double eps = 0.0001;
-    double y = cos(x);
-    
-    double S = 0;
-    double term = 1.0;
-    int n = 0;
+// третье фииизика
+//     double V = 6.0;      // м3
+//     double m = 25.0;     // кг
+//     double M = 0.018;    // кг/моль (перевели в СИ)
+//     double R = 8.314;    // Дж/(моль*К)
 
-    do {
-        S += term;
-        n++;
-        term *= -x * x / ((2 * n - 1) * (2 * n));
-    } while (abs(term) >= eps);
+//     cout << setw(10) << "t, C" << setw(15) << "P, кПа" << endl;
+//     cout << "--------------------------" << endl;
 
-    cout << "Sum (do-while): " << fixed << setprecision(6) << S << endl;
-    cout << "Control (y):    " << y << endl;
-
-
-
-
+//     for (int t = 200; t <= 300; t += 20) {
+//         double T = t + 273.15; // Перевод в Кельвины
+        
+//         // Расчет давления в Паскалях
+//         double P = (m * R * T) / (M * V);
+        
+//         // Вывод в килопаскалях (кПа) для удобства
+//         cout << setw(10) << t << setw(15) << fixed << setprecision(2) << P / 1000 << endl;
+//     }
     return 0;
 }
