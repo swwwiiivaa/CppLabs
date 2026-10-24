@@ -60,7 +60,7 @@ int main()
             cout << token; // выводим чистое слово
             first = false;
         }
-        token = strtok(NULL, ", "); // шлеп на следующее слово
+        token = strtok(NULL, ", "); //на следующее слово
     }
     cout << endl;
 
